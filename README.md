@@ -45,9 +45,11 @@ fn main() {
 }
 ```
 
-- The `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type.
-
 ### Storing Values with Variables
+
+- The `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type. Some languages call this a _static method_.
+
+- `.read_line(&mut guess)` calls the `read_line` method on the standard input handle to get input from the user. We’re also passing one argument to `read_line: &mut guess`.
 
 ### Handling Potential Failure with the Result Type
 
