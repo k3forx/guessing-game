@@ -47,9 +47,11 @@ fn main() {
 
 ### Storing Values with Variables
 
-- The `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type. Some languages call this a _static method_.
+> The `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type. Some languages call this a _static method_.
 
-- `.read_line(&mut guess)` calls the `read_line` method on the standard input handle to get input from the user. We’re also passing one argument to `read_line: &mut guess`.
+> `.read_line(&mut guess)` calls the `read_line` method on the standard input handle to get input from the user. We’re also passing one argument to `read_line: &mut guess`.
+
+> The job of `read_line` is to take whatever the user types into standard input and append that into a string (without overwriting its contents), so it takes that string as an argument. The string argument needs to be mutable so the method can change the string’s content by adding the user input.
 
 ### Handling Potential Failure with the Result Type
 
